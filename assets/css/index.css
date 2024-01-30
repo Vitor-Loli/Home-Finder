@@ -117,7 +117,7 @@
 
 .imoveis .cards .card{
     width: 300px;
-    height: auto;
+    height: 420px;
     overflow-x: hidden;
     padding-bottom: 2rem;
     display: flex;
@@ -161,6 +161,16 @@
 
 .imoveis .preco{
     color: #C6AB7C;
+    font-weight: 700;
+}
+
+.imoveis .vago{
+    color: #071d2c;
+    font-weight: 700;
+}
+
+.imoveis .alugado{
+    color: #a12020;
     font-weight: 700;
 }
 
@@ -227,3 +237,4 @@
     width: 25%;
     background-color: transparent;
 }
+
