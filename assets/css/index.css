@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    transition: all 0.3s ease-in;
+}
+
+.infos{
+    width: 100%;
+    height: 2rem;
+    background-color: #071d2c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos .local{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 3rem;
+}
+
+.infos .contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-right: 3rem;
+}
+
+.apresentacao{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/banner.png);
+}
+
+.apresentacao .texto{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    border: 5px solid #ffffff;
+}
+
+.apresentacao .texto h1{
+    font-size: 300%;
+    font-weight: 700;
+}
+
+.apresentacao .texto p{
+    font-size: 150%;
+    font-weight: 400;
+}
+
+.apresentacao .texto .botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao .texto .botao button{
+    width: 50%;
+    height: 50px;
+    color: #ffffff;
+    border: 0.5px solid #213644;
+    border-radius: 10px;
+    background-color: #213644;
+    margin-top: 2rem;
+}
+
+.apresentacao .texto .botao button:hover{
+    color: #213644;
+    border: 0.5px solid #213644;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.imoveis{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 2rem;
+}
+
+.imoveis .cards{
+    width: 70%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.imoveis .cards .card{
+    width: 300px;
+    height: 420px;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.imoveis .cards .card .descricao{
+    margin-left: 1rem;
+}
+
+.imoveis .cards .card img{
+    width: 300px;
+}
+
+.imoveis .cards .card .button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.imoveis .cards .card .button button{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #071d2c;
+    background-color: #071d2c;
+    color: #ffffff;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.imoveis .cards .card .button button:hover{
+    transform: translate(10px);
+}
+
+.imoveis .cards .card:hover{
+    scale: 1.05;
+}
+
+.imoveis .preco{
+    color: #C6AB7C;
+    font-weight: 700;
+}
+
+.imoveis .vago{
+    color: #071d2c;
+    font-weight: 700;
+}
+
+.imoveis .alugado{
+    color: #a12020;
+    font-weight: 700;
+}
+
+.imoveis .filtro{
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.imoveis .filtro .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.imoveis .filtro .form input, select{
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    font-size: 110%;
+}
+
+.imoveis .filtro .form label i{
+    font-size: 150%;
+}
+
+.imoveis .filtro .form .botao{
+    width: 100%;
+}
+
+.imoveis .filtro .form .btn{
+    width: 100%;
+    background-color: #213644;
+    color: #ffffff;
+}
+
+.sobre{
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #ffffff;
+    color: #071d2c;
+}
+
+.sobre .texto{
+    width: 60%;
+    text-align: justify;
+}
+
+.sobre .texto .titulo{
+    color: #C6AB7C;
+}
+
+.sobre img{
+    width: 25%;
+    background-color: transparent;
+}
+
