@@ -2,11 +2,11 @@
     class dataBase {
         // Atributos
         private $conexao;
-        private $host = 'localhost';
-        private $porta = '3306';
-        private $db_nome = 'db_projeto_ge';
+        private $host = 'viaduct.proxy.rlwy.net';
+        private $porta = '23038';
+        private $db_nome = 'railway';
         private $usuario = 'root';
-        private $senha = '';
+        private $senha = '6DCGFA2EgCABdEdf1edEa5afce5C5CHH';
 
         // Métodos
         public function __construct() {

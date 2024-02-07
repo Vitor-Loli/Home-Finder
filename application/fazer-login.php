@@ -8,7 +8,7 @@
     if($user == '' || $pass == ''){
         print  "<script> 
             alert('Há dados em branco, por favor verifique!')
-            window.location = '../index.html'
+            window.location = '../index.php'
         </script>";
     }
 
@@ -32,6 +32,6 @@
         $_SESSION['userEmail'] = $dados['email'];
         $_SESSION['userPhone'] = $dados['telefone'];
 
-        header('LOCATION: ../sistema.html');
+        header('LOCATION: ../sistema.php');
     }
 ?>
