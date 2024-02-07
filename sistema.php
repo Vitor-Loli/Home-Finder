@@ -20,8 +20,12 @@
 <body>
     <div class="inicio">
         <h3>Bem Vindo <span class='nome'><?php print " {$_SESSION['userName']}"; ?></span></h3>
-
-        <button><i class='bx bx-plus'> </i>Imóvel</button>
+        
+        <div class="buttons">
+            <button onclick="formImovel()"><i class='bx bx-plus'> </i>Imóvel</button>
+            <button class="sair" onclick = "sair()"><i class='bx bx-exit' ></i></button>
+        </div>
+        
     </div>
 
     <div class="tabela">
@@ -37,6 +41,7 @@
                     <th>Carros</th>
                     <th>Área</th>
                     <th>Situação</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
 
@@ -63,6 +68,10 @@
                                 <td>{$linha['carros']}</td>
                                 <td>{$linha['area']}</td>
                                 <td>{$linha['situacao']}</td>
+                                <td>
+                                    <i class='bx bx-trash' ></i>
+                                    <i class='bx bx-edit-alt' ></i>
+                                </td>
                             </tr>
                         ";
                     }
@@ -73,4 +82,14 @@
         </table>
     </div>
 </body>
+
+<script>
+    function formImovel(){
+        window.location = "novo-imovel.html"
+    }
+
+    function sair(){
+        window.location = "index.php"
+    }
+</script>
 </html>

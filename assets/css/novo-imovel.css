@@ -17,6 +17,43 @@ body{
     flex-direction: column;
 }
 
+form{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid #213644;
+}
+
+form h3{
+    width: 100%;
+    text-align: center;
+    font-size: 250%;
+}
+
+form .inputs{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+form .inputs input{
+    width: 300px;
+    height: 2rem;
+}
+
+form .inputs select{
+    width: 300px;
+    height: 2rem;
+}
+
+form i{
+    font-size: 150%;
+}
+
 .inicio{
     width: 80%;
     display: flex;
@@ -63,37 +100,4 @@ body{
 
 .inicio h3{
     font-size: 200%;
-}
-
-.tabela{
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 2rem;
-    border: 1px solid #213644;
-}
-
-.tabela table{
-    width: 90%;
-    text-align: center;
-}
-
-.tabela table th{
-    border: 1px solid #213644;
-    font-size: 110%;
-    background-color: #213644;
-    color: #C6AB7C;
-    padding: 0.5rem;
-}
-
-.tabela table td{
-    border-bottom: 1px solid #213644;
-    padding: 0.5rem;
-}
-
-.nome{
-    color: #C6AB7C;
 }
