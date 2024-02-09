@@ -69,7 +69,7 @@
                                 <td>{$linha['area']}</td>
                                 <td>{$linha['situacao']}</td>
                                 <td>
-                                    <i class='bx bx-trash' ></i>
+                                <a onclick='excluirImovel({$linha['id_imovel']}, \"{$linha['imagem']}\")'><i class='bx bx-trash' ></i></a>
                                     <i class='bx bx-edit-alt' ></i>
                                 </td>
                             </tr>
@@ -91,5 +91,12 @@
     function sair(){
         window.location = "index.php"
     }
+
+    function excluirImovel(id, imagem) {
+    var resposta = confirm('Deseja realmente excluir o imóvel?');
+    if (resposta) {
+      window.location = 'application/excluir-imovel.php?id=' + id + '&imagem=' + imagem;
+    }
+  }
 </script>
 </html>

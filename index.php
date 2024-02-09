@@ -83,15 +83,19 @@
                     $disp = "Indisponível";
                 }
 
+                $preco = $linha['preco'];
+
+                $preco = number_format($preco, 2, ',', '.');
+
 
                 print"
                     
                         <div class='card'>
-                                <img src='assets/images/foto-chave.png' alt=''>
+                                <img src='application/upload/{$linha['imagem']}' alt=''>
                             <div class='descricao'>
                                 <h3>{$linha['descricao']}</h3>
                                 <p>{$linha['localizacao']}</p>
-                                <h3><span class='preco'>R$ {$linha['preco']}</span></h3>
+                                <h3><span class='preco'>R$ $preco</span></h3>
                                 <p><i class='bx bxs-building-house'></i>{$linha['andares']} Andares</p>
                                 <p><i class='bx bxs-bed'></i>{$linha['quartos']} Quartos</p>
                                 <p><i class='bx bxs-car'></i>{$linha['carros']} Carros</p>

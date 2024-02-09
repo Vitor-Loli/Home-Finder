@@ -74,6 +74,7 @@ body{
     flex-direction: column;
     padding: 2rem;
     border: 1px solid #213644;
+    overflow: auto;
 }
 
 .tabela table{
@@ -97,3 +98,4 @@ body{
 .nome{
     color: #C6AB7C;
 }
+
