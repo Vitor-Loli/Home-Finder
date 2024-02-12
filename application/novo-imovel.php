@@ -14,14 +14,13 @@
             alert('Há dados em branco, por favor verifique!')
             window.location = '../novo-imovel.html'
         </script>";
-    }
-
+    } 
+    
     $nome_imagem = uniqid() . '.jpg';
     $destino = 'upload/' . $nome_imagem;
     move_uploaded_file($_FILES['file_imagem']['tmp_name'], $destino);
     
-    $preco  = str_replace(['.', ',', 'R$'], '', $precoD);
-    $preco = intval($preco);
+    $preco  = (int)preg_replace("/[^0-9]/", "", $precoD);
 
     $area = str_replace(['.', ','], '', $areaD);
     $area = intval($area);
@@ -34,7 +33,12 @@
         $parametros = [$descricao, $localizacao, $preco, $andares, $quartos, $carros, $area, $situacao, $nome_imagem];
         $dataBase->executeCommand($sql, $parametros);   
         $msn = "Imóvel cadastrado com sucesso!";
-    }   
+    } else{
+        $sql = "UPDATE imoveis SET id = ?, descricao = ?, localizacao = ?, preco = ?, andares = ?, quartos = ?, carros = ?, area = ?, situacao = ?, imagem = ?";
+        $parametros = [$id, $descricao, $localizacao, $preco, $andares, $quartos, $carros, $area, $situacao, $nome_imagem];
+        $dataBase->executeCommand($sql, $parametros);   
+        $msn = "Imóvel alterado com sucesso!";
+    }
 
     print"<script>
             alert('$msn')
