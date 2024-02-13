@@ -133,6 +133,7 @@
 .imoveis .cards .card img{
     width: 300px;
     height: 168px;
+    object-fit: contain;
 }
 
 .imoveis .cards .card .button{

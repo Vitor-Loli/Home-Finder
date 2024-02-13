@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    transition: all 0.3s ease-in;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.imagem{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: 500px;
+    object-fit: contain;
+}
+
+.inicio{
+    width: 90%;
+    height: 4rem;
+    background-color: #213644;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inicio h3{
+    margin-left: 5rem;
+    margin-right: 1rem;
+    font-size: 200%;
+}
+
+.inicio .preco{
+    color: #C6AB7C;
+}
+
+.desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 4rem;
+}
+
+.desc .infos{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.desc .infos h4{
+    margin-bottom: 1rem;
+}
+
+.btn button{
+    width: 150px;
+    font-size: 130%;
+    background-color: #C6AB7C;
+    color: #213644;
+    border: 0.5px solid #C6AB7C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button:hover{
+    background-color: transparent;
+    color: #C6AB7C;
+    border: 0.5px solid #C6AB7C;
+}
+
+.btn .sair{
+    width: 70px;
+    font-size: 160%;
+    background-color: #bb2020;
+    color: #213644;
+    border: 0.5px solid #bb2020;
+    margin-right: 5rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}

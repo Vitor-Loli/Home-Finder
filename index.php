@@ -90,7 +90,7 @@
 
                 print"
                     
-                        <div class='card' onclick='verImovel()'>
+                        <div class='card' onclick='verImovel({$linha['id_imovel']})'>
                                 <img src='application/upload/{$linha['imagem']}' alt=''>
                             <div class='descricao'>
                                 <h3>{$linha['descricao']}</h3>
@@ -103,7 +103,7 @@
                                 <h3><span class='$situacao'>$disp</span></h3>
                             </div>
                             <div class='button'>
-                                <button onclick='verImovel()'>Ver Imóvel</button>
+                                <button>Ver Imóvel</button>
                             </div>
                         </div>
                     
@@ -209,7 +209,7 @@
 
 <script>
     function verImovel(id){
-        window.location = 'ver-imovel.htmlk'
+        window.location = 'imovel.php?id=' + id
     }
 </script>
 </html>
