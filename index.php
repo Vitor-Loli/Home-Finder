@@ -85,12 +85,12 @@
 
                 $preco = $linha['preco'];
 
-                $preco = number_format($preco, 2, ',', '.');
+                $preco = number_format($preco / 100, 2, ',', '.');
 
 
                 print"
                     
-                        <div class='card'>
+                        <div class='card' onclick='verImovel()'>
                                 <img src='application/upload/{$linha['imagem']}' alt=''>
                             <div class='descricao'>
                                 <h3>{$linha['descricao']}</h3>
@@ -103,7 +103,7 @@
                                 <h3><span class='$situacao'>$disp</span></h3>
                             </div>
                             <div class='button'>
-                                <button>Ver Imóvel</button>
+                                <button onclick='verImovel()'>Ver Imóvel</button>
                             </div>
                         </div>
                     
@@ -207,4 +207,9 @@
     </div>
 </body>
 
+<script>
+    function verImovel(id){
+        window.location = 'ver-imovel.htmlk'
+    }
+</script>
 </html>
