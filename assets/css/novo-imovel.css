@@ -1,112 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap");
 
-*{
-    font-family: 'Montserrat', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
-    transition: all 0.3s ease-in;
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  transition: all 0.3s ease-in;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-form{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border: 1px solid #213644;
+form {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid #213644;
 }
 
-form h3{
-    width: 100%;
-    text-align: center;
-    font-size: 250%;
+form h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 250%;
 }
 
-form .inputs{  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 2rem;
+form .inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2rem;
 }
 
-form .inputs input{
-    width: 300px;
-    height: 2rem;
+form .inputs input {
+  width: 300px;
+  height: 2rem;
 }
 
-form .inputs select{
-    width: 300px;
-    height: 2rem;
+form .inputs select {
+  width: 300px;
+  height: 2rem;
 }
 
-form i{
-    font-size: 150%;
+form i {
+  font-size: 150%;
 }
 
-.inicio{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5rem;
-    padding: 2rem;
-    background-color: #213644;
-    border: 1px solid #213644;
-    color: #ffffff;
+.inicio {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #213644;
+  border: 1px solid #213644;
+  color: #ffffff;
 }
 
-.inicio .buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.inicio .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.inicio button{
-    width: 150px;
-    font-size: 130%;
-    background-color: #C6AB7C;
-    color: #213644;
-    border: 0.5px solid #C6AB7C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.inicio button {
+  width: 150px;
+  font-size: 130%;
+  background-color: #c6ab7c;
+  color: #213644;
+  border: 0.5px solid #c6ab7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inicio button:hover{
-    background-color: transparent;
-    color: #C6AB7C;
-    border: 0.5px solid #C6AB7C;
+.inicio button:hover {
+  background-color: transparent;
+  color: #c6ab7c;
+  border: 0.5px solid #c6ab7c;
 }
 
-.inicio .sair{
-    width: 70px;
-    font-size: 160%;
-    background-color: #bb2020;
-    color: #213644;
-    border: 0.5px solid #bb2020;
+.inicio .sair {
+  width: 70px;
+  font-size: 160%;
+  background-color: #bb2020;
+  color: #213644;
+  border: 0.5px solid #bb2020;
 }
 
-.inicio h3{
-    font-size: 200%;
+.inicio h3 {
+  font-size: 200%;
 }
 
-.submit{
-    width: 100%;
-    height: 2rem;
-    background-color: #213644;
-    color: #C6AB7C;
-    font-size: 130%;
-    border: 1px solid #213644;
+.submit {
+  width: 100%;
+  height: 2rem;
+  background-color: #213644;
+  color: #c6ab7c;
+  font-size: 130%;
+  border: 1px solid #213644;
+}
+
+.inputs .flex {
+  display: flex;
+  justify-content: center;
+  gap: 2;
+}
+
+.inputs input {
+  margin-top: 5px;
 }
