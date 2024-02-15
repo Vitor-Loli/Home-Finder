@@ -15,7 +15,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
 }
 
 .imagem{
@@ -32,6 +31,7 @@ body{
 }
 
 .inicio{
+    margin-top: 1rem;
     width: 90%;
     height: 4rem;
     background-color: #213644;

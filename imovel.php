@@ -33,9 +33,29 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="assets/css/imovel.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
 </head>
 <body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="LOGO">
+            <div class="titulo">
+                <h1>HOME</h1>
+                <h1>FINDER</h1>
+            </div>
 
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#"><i class='bx bx-search'></i></a></li>
+                <li><a href="index.php#imoveis">Imóveis</a></li>
+                <li><a href="index.php#sobre">Sobre</a></li>
+                <li><a href="index.php#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </header>
 
     <div class="inicio">
         <h3><?php print "{$dados['descricao']}" ?></h3>
